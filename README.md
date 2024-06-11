@@ -28,3 +28,10 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## GitHub: Despliegue con GitHub Pages
+- Luego de tener tu repositorio ir a Settings, ir a Pages y seleccionar source en GithubActions
+- Hacer click en configure y sustituir por el archivo de que ofrece vit de githubpages y guardar
+- En vscode, en tu archivo vite.config agregar "base", poner el link del repositorio y guardar
+
+
