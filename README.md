@@ -30,7 +30,7 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 ## GitHub: Despliegue con GitHub Pages
-- En vscode, en tu archivo vite.config.ts agregar "base", si tu link del repositorio es 'https://user.github.io/MovieApp/', entonces en base se pone '/MovieApp' y guardar
+- En vscode, en tu archivo vite.config.ts agregar "base", si tu link del repositorio es 'https://user.github.io/MovieApp/', entonces en base se pone '/MovieApp/' y guardar
 - Instalar dependencias si no se tiene 
 - Para desplegar a GitHub pages, primero generamos la build con "npm run build", y se creará la carpeta dist
 - Luego usamos la herramienta gh-pages para que la carpeta dist se despliegue, entonces corremos "npm install --save-dev gh-pages"
