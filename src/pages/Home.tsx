@@ -1,20 +1,18 @@
-import { Movie } from '../models/Movie.ts';
+import { Movie } from '../models/Movie';
+import MovieList from '../components/MovieList';
 
 type Props = {
   movies: Movie[];
 };
 
-const Home = ({ movies }: Props) => {
+const Home = ({ movies }: Props): JSX.Element => {
   return (
-    <div>
-      <h1>Lista de peliculas</h1>
-      <ul>
-        {movies.map((movie) => (
-          <li key={movie.id}>{movie.title}</li>
-        ))}
-      </ul>
+    <div className="home">
+      <h1>Lista de películas</h1>
+      <MovieList movies={movies} />
     </div>
   );
 };
 
 export default Home;
+
