@@ -1,19 +1,16 @@
-import { Movie } from '../models/Movie';
-import MovieItem from './MovieItem';
+import { Movie } from '../models/Movie.ts';
 
 type Props = {
   movies: Movie[];
 };
 
-const MovieList = ({ movies }: Props): JSX.Element => {
+const MovieList = ({ movies }: Props) => {
   return (
-    <div className="movie-list">
-      {movies.map((movie) => (
-        <MovieItem key={movie.id} movie={movie} />
-      ))}
+    <div>
+      <h1>Movie List</h1>
+      <MovieList movies={movies} />
     </div>
   );
 };
 
 export default MovieList;
-
