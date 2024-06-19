@@ -11,6 +11,7 @@ const MovieItem = ({ movie }: MovieItemProps) => {
       <div className="movie-item-details">
         <h2 className="movie-item-title">{movie.title}</h2>
         <p className="movie-item-language">{movie.original_language}</p>
+        {/* <p>{movie.overview}</p> */}
       </div>
     </div>
   );
