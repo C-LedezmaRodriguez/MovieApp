@@ -5,11 +5,11 @@ type Props = {
   movies: Movie[];
 };
 
-const Home = ({ movies }: Props): JSX.Element => {
+const Home = ({ movies }: Props) => {
   return (
     <div className="home">
-      <h1>Lista de películas</h1>
-      <MovieList movies={movies} />
+      {/* <h1>Lista de películas</h1> */}
+      <MovieList movies={movies} title = "lista de peliculas"/>
     </div>
   );
 };
