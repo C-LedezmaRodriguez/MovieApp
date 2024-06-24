@@ -65,8 +65,21 @@
 }
 .movie-item-title {
   font-size: 1.1em;
+  margin: 0 10px ;
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+  
 }
 
+.movie-item-language{
+  font-size: 0.9em;
+  margin: 0 10px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+
+}
 .movie-details {
   display: flex;
   flex-direction: column;
@@ -80,7 +93,10 @@
 }
 
 .movie-list-title {
-  margin-bottom: 10px;
+  font-size: 2.5em;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .movie-list-container {
@@ -100,4 +116,11 @@
 
 .movie-list-container::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+
+.movie-list-subtitle{
+  font: 1em sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
 }

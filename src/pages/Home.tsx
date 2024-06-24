@@ -1,12 +1,17 @@
 import MovieList from '../components/MovieList';
-import HomeService from '../services/HomeService';
+// import HomeService from '../services/HomeService';
+import { Movie } from '../models/Movie';
 
-const Home = () => {
-  const { movies } = HomeService.useHomeService();
+type Props = {
+  movies: Movie[];
+  title: string;
+  subtitle: string
+};
+const Home = ({ movies }: Props) => {
+  // const { movies } = HomeService.useHomeService();
   return (
     <div className="home">
-      <h1>Lista de películas</h1>
-      <MovieList movies={movies}/>
+      <MovieList movies={movies} title = "Peliculas nuevas" subtitle='Desubre las mejores peliculas aqui!'/>
     </div>
   );
 };
