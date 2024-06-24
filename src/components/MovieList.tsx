@@ -3,8 +3,8 @@ import MovieItem from './MovieItem';
 
 type Props = {
   movies: Movie[];
-  title: string;
-  subtitle: string; 
+  title?: string;
+  subtitle?: string; 
 };
 
 const MovieList = ({ movies, title, subtitle }: Props) => {
