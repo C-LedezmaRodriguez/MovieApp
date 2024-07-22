@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
-
 import { Movie } from '../models/Movie.ts';
-
 import MovieUtils  from '../utils/movieUtils.ts';
 
 const useHomeService = () => {
