@@ -1,13 +1,10 @@
+import MainRoutes from './routes/MainRoutes';
 import './App.css';
 
-import HomeController from './controllers/HomeController.tsx';
-
-function App() {
+const App = () => {
   return (
-    <>
-      <HomeController />
-    </>
+      <MainRoutes />
   );
-}
+};
 
 export default App;
