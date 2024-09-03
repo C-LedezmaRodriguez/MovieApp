@@ -43,6 +43,11 @@
   color: #888;
 }
 
+.goMovies{
+  cursor: pointer;
+  color: #535bf2;
+}
+
 .movie-item {
   display: flex;
   align-items: center;
